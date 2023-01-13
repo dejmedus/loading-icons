@@ -35,7 +35,7 @@ body {
 }
 /* */
 
-/* Happy */
+/* Happy Face */
 #happy {
   color: rgb(255, 222, 165);
   animation: happyAnim 5s infinite;
@@ -55,6 +55,7 @@ body {
 
 /* Flower */
 #flower {
+  color: rgba(180, 201, 255);
   display: block;
   animation: flowerAnim 10s infinite;
 }
@@ -119,7 +120,7 @@ body {
 
 @media (prefers-reduced-motion) {
   * {
-    animation: none;
+    animation: none !important;
   }
 }
 @media (prefers-color-scheme: dark) {
