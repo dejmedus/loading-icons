@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-rows: 75vh 25vh;
+}
+
+.loading {
+  display: grid;
+  place-content: center;
+}
+
+.loader {
+  font-size: 100px;
+  display: none;
+}
+
+/* Star */
+#star {
+  color: rgb(255, 243, 165);
+  animation: starAnim 10s infinite;
+}
+@keyframes starAnim {
+  0% {
+    transform: rotate(0turn) scale(0.4);
+  }
+  50% {
+    transform: rotate(1turn) scale(2);
+  }
+  100% {
+    transform: rotate(0turn) scale(0.4);
+  }
+}
+/* */
+
+/* Happy */
+#happy {
+  color: rgb(255, 222, 165);
+  animation: happyAnim 5s infinite;
+}
+@keyframes happyAnim {
+  0% {
+    transform: translate(-20px);
+  }
+  50% {
+    transform: translate(40px);
+  }
+  100% {
+    transform: translate(-20px);
+  }
+}
+/*  */
+
+/* Flower */
+#flower {
+  display: block;
+  animation: flowerAnim 10s infinite;
+}
+@keyframes flowerAnim {
+  0% {
+    transform: rotate(0turn);
+    color: rgba(180, 201, 255);
+  }
+  15% {
+    color: rgba(227, 198, 255);
+  }
+  25% {
+    color: rgba(255, 180, 183);
+  }
+  35% {
+    color: rgba(255, 210, 180);
+  }
+  50% {
+    color: rgb(255, 243, 165);
+  }
+  65% {
+    color: rgba(255, 210, 180);
+  }
+  75% {
+    color: rgba(255, 180, 183);
+  }
+  85% {
+    color: rgba(227, 198, 255);
+  }
+  100% {
+    transform: rotate(1turn);
+    color: rgba(180, 201, 255);
+  }
+}
+/*  */
+
+.buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.buttons button {
+  font-family: "Gaegu", cursive;
+  padding: 0.4em 1em;
+  border-radius: 6px;
+  font-size: 2em;
+  border: 2px solid rgb(160, 189, 236);
+  color: rgb(160, 189, 236);
+  background-color: rgba(227, 236, 251);
+}
+.buttons button:hover {
+  border: 2px solid rgb(123, 164, 231);
+  color: rgb(123, 164, 231);
+}
+
+.buttons button:disabled {
+  color: rgba(227, 236, 251);
+  background-color: rgb(160, 189, 236);
+  border: 2px solid rgba(227, 236, 251);
+}
+
+@media (prefers-reduced-motion) {
+  * {
+    animation: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: rgb(34, 34, 34);
+  }
+}
