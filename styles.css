@@ -42,13 +42,13 @@ body {
 }
 @keyframes happyAnim {
   0% {
-    transform: translate(-20px);
+    transform: translate(-40px);
   }
   50% {
     transform: translate(40px);
   }
   100% {
-    transform: translate(-20px);
+    transform: translate(-40px);
   }
 }
 /*  */
